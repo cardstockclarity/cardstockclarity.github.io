@@ -1,1095 +1,193 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-
-        <title>Linda Lam</title>
-
-        <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-
-        <meta name="description" content="FlexyCodes - FlexyCard vCard Template. Creating my personal page!"/>
-
-        <!-- CSS | bootstrap -->
-        <!-- Credits: http://getbootstrap.com/ -->
-        <link  rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-
-        <!-- CSS | font-awesome -->
-        <!-- Credits: http://fortawesome.github.io/Font-Awesome/icons/ -->
-        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
-
-        <!-- CSS | animate -->
-        <!-- Credits: http://daneden.github.io/animate.css/ -->
-        <link rel="stylesheet" type="text/css" href="css/animate.min.css" />
-
-        <!-- CSS | Normalize -->
-        <!-- Credits: http://manos.malihu.gr/jquery-custom-content-scroller -->
-        <link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.css" />
-
-        <!-- CSS | Colors -->
-        <link rel="stylesheet" type="text/css" href="css/colors/gray.css" />
-
-        <!-- CSS | Style -->
-        <!-- Credits: http://themeforest.net/user/FlexyCodes -->
-        <link rel="stylesheet" type="text/css" href="css/main.css" />
-
-        <!-- CSS | prettyPhoto -->
-        <!-- Credits: http://www.no-margin-for-errors.com/ -->
-        <link rel="stylesheet" type="text/css" href="css/prettyPhoto.css"/>
-
-        <!-- CSS | Google Fonts -->
-        <link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
-        <!-- Favicon
-        <link rel="shortcut icon" type="image/x-icon" href="images/favicon/favicon.ico">-->
-
-        <!--[if IE 7]>
-                <link rel="stylesheet" type="text/css" href="css/icons/font-awesome-ie7.min.css"/>
-        <![endif]-->
-
-        <style>
-            @media only screen and (max-width : 991px){
-                .resp-vtabs .resp-tabs-container {
-                    margin-left: 0px !important;
-                }
-                .resp-vtabs ul.resp-tabs-list {
-                    width: 10%;
-                    margin-right: 2px !important;
-                }
-            }
-
-            @media only screen and (max-width : 800px){
-
-                .widget-profil {
-                    float: none !important;
-                }
-            }
-
-            .widget-profil {
-                float: left;
-            }
-
-            .resp-vtabs ul.resp-tabs-list {
-                float: right;
-            }
-        </style>
-
-    </head>
-
-    <body>
-
-        <!--[if lt IE 7]>
-                <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-
-        <!-- Laoding page -->
-        <div id="preloader"><div id="spinner"></div></div>
-
-        <!-- .slideshow -->
-        <!--<ul class="cb-slideshow" id="cb_slideshow">
-            <li><span>Image 01</span><div></div></li>
-            <li><span>Image 02</span><div></div></li>
-            <li><span>Image 03</span><div></div></li>
-            <li><span>Image 04</span><div></div></li>
-            <li><span>Image 05</span><div></div></li>
-            <li><span>Image 06</span><div></div></li>
-        </ul> -->
-        <!-- /.slideshow -->
-
-        <!-- .wrapper -->
-        <div class="wrapper">
-
-            <!--- .Content -->
-            <section class="tab-content">
-                <div class="container">
-
-                    <div class="row">
-
-                        <div class="col-md-12">
-
-                            <div class="row">
-
-
-                                <div class="col-md-3 widget-profil">
-                                    <div class="row">
-
-                                        <!-- Profile Image -->
-                                        <div class="col-lg-12 col-md-12 col-sm-3 col-xs-12 ">
-
-                                            <div class="image-holder one" id="pic_prof_1"  style="display:block">
-
-                                                <img class="head-image up circle" src="profilepic.gif" width="150" height="160" alt="" />
-                                                <img class="head-image up-left circle" src="profilepic.gif" width="150" height="160" alt="" />
-                                                <img class="head-image left circle" src="profilepic.gif" width="150" height="160" alt="" />
-                                                <img class="head-image down-left circle" src="profilepic.gif" width="150" height="160" alt="" />
-                                                <img class="head-image down circle" src="profilepic.gif" width="150" height="160" alt="" />
-                                                <img class="head-image down-right circle" src="profilepic.gif" width="150" height="160" alt="" />
-                                                <img class="head-image right circle" src="profilepic.gif" width="150" height="160" alt="" />
-                                                <img class="head-image up-right circle" src="profilepic.gif" width="160" height="160" alt="" />
-                                                <img class="head-image front circle" src="profilepic.gif" width="160" height="160" alt="" />
-
-                                            </div>
-
-                                            <!-- style for simple image profile -->
-                                          <!--  <div class="circle-img" id="pic_prof_2"></div>-->
-
-                                        </div>
-                                        <!-- End Profile Image -->
-
-                                        <div class="col-lg-12 col-md-12 col-sm-9 col-xs-12">
-
-                                            <!-- Profile info -->
-                                            <div id="profile_info">
-                                                <h1 id="name" class="transition-02">Linda Lam</h1>
-                                                <h4 class="line">AI Enthusiast</h4>
-                                                <h6><span class="fa fa-map-marker"></span> some coffee shop</h6>
-                                            </div>
-                                            <!-- End Profile info -->
-
-
-                                            <!-- Profile Description -->
-                                            <div id="profile_desc">
-                                                <p>
-                                                     <center> **Site is Under Construction**</center>
-                                                    
-                                                         
-                                                    
-                                                </p>
-
-                                            </div>
-                                            <!-- End Profile Description -->
-
-
-                                            <!-- Name -->
-                                            <div id="profile_social">
-                                                <h6>My Social Profiles - Follow Me!</h6>
-                                                <a href="https://www.instagram.com/city_sleeper_/"><i class="fa fa-instagram"></i></a>
-                                                <a href="https://twitter.com/lilam_tweets"><i class="fa fa-twitter"></i></a>
-                                                <a href="https://www.linkedin.com/in/profile2007/"><i class="fa fa-linkedin"></i></a>
-                                                <a href="https://github.com/lilamcodes"><i class="fa fa fa-github"></i></a>
-                                                <a href="https://medium.com/@lindalam_19262"><i class="fa fa-medium"></i></a>
-                                                <div class="clear"></div>
-                                            </div>
-                                            <!-- End Name -->
-
-                                        </div>
-
-                                    </div>
-                                </div>
-
-                                <div class="col-md-9 flexy_content" style="padding-left: 0;padding-right: 0;">
-
-                                    <!-- verticalTab menu -->
-                                    <div id="verticalTab">
-
-                                        <ul class="resp-tabs-list">
-                                            <li class="tabs-profile hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a profile" data-tab-name="profile">
-                                                <span class="tite-list">profile</span>
-                                                <i class="fa fa-user icon_menu icon_menu_active"></i>
-                                            </li>
-
-                                            <li class="tabs-resume hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a" data-tab-name="resume">
-                                                <span class="tite-list">resume</span>
-                                                <i class="fa fa-tasks icon_menu"></i>
-                                            </li>
-
-                                            <li class="tabs-portfolio hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a" data-tab-name="portfolio">
-                                                <span class="tite-list">portfolio</span>
-                                                <i class="fa fa-briefcase icon_menu"></i>
-                                            </li>
-
-                                            <!-- <li class="tabs-blog hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a" data-tab-name="blog">
-                                                <span class="tite-list">blog</span>
-                                                <i class="fa fa-bullhorn icon_menu"></i>
-                                            </li>
-
-                                            <li class="tabs-contact hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a" data-tab-name="contact" style="margin-bottom: 48px !important;">
-                                                <span class="tite-list">contact</span>
-                                                <i class="fa fa-envelope icon_menu"></i>
-                                            </li>-->
-
-                                            <!-- <a href="#" id="print"><i class="fa fa-print icon_print"></i> </a>
-                                            <a href="#" id="downlowd"><i class="fa fa-download icon_print"></i> </a>-->
-
-                                        </ul>
-                                        <!-- /resp-tabs-list -->
-
-                                        <!-- resp-tabs-container -->
-                                        <div class="resp-tabs-container">
-
-                                            <!-- profile -->
-                                            <div id="profile" class="content_2">
-                                                <!-- .title -->
-                                                <h1 class="h-bloc">About Me</h1>
-
-                                                <div class="row top-p">
-                                                    <div class="col-md-6 profile-l">
-
-                                                        <!--About me-->
-
-
-                                                        <ul class="about">
-
-                                                            <li>
-                                                                <i class="glyphicon glyphicon-user"></i>
-                                                                <label>Name</label>
-                                                                <span class="value">Linda Lam</span>
-                                                                <div class="clear"></div>
-                                                            </li>
-
-
-                                                            <li>
-                                                                <i class="glyphicon glyphicon-map-marker"></i>
-                                                                <label>Location</label>
-                                                                <span class="value"> Open to Relocation </span>
-                                                                <div class="clear"></div>
-                                                            </li>
-
-                                                            <li>
-                                                                <i class="glyphicon glyphicon-envelope"></i>
-                                                                <label>Email</label>
-                                                                <span class="value">lindalam400@gmail.com</span>
-                                                                <div class="clear"></div>
-                                                            </li>
-
-                                                            <li>
-                                                                <i class="glyphicon glyphicon-phone"></i>
-                                                                <label>Phone</label>
-                                                                <span class="value">Ask Me!</span>
-                                                                <div class="clear"></div>
-                                                            </li>
-
-
-                                                        </ul>
-
-
-                                                        <p style="margin-bottom:20px">
-                                                            <i class="fa fa-quote-left"></i>
-
-                                                            I am a Senior Consultant under the Watson AI and Data Platform at IBM.
-                                                            <br><br>
-                                                            I specialize in digital transformations with a focus on Cloud and AI solutions.  I am always looking for opportunities to learn and build industry expertise.
-                                                           
-                                                            <br><br>
-                                                            I am also currently volunteering as one of the managers at 1UpOnCancer, a gaming community-based non-profit that raises funds through events and live-streaming (e.g. twitch) to provide financial assistance for adults undergoing cancer treatment.
-                                                            Come check us out at<a href=http://www.1uponcancer.org/> www.1uponcancer.org</a>!
-                                                            <br><br>
-                                                            
-                                                            
-                                                            You can find more details about my professional and educational background on the other pages.  
-
-                                                            <i class="fa fa-quote-right"></i>
-                                                        </p>
-
-
-
-                                                    </div>
-                                                    <!-- End left-wrap -->
-
-                                                    <div class="col-md-6 profile-r">
-
-                                                        <div class="cycle-slideshow">
-
-                                                            <img src="https://github.com/lilamcodes/website/blob/master/images/1-5.png?raw=true" alt="" />
-                                                            <img src="https://github.com/lilamcodes/website/blob/master/images/1-7.png?raw=true" alt="" />
-                                                            
-                                                        </div>
-
-                                                    </div>
-
-                                                </div>
-
-                                                <div class="clear"></div>
-
-
-
-
-
-
-
-                                                <div class="clear"></div>
-                                                <div class="border-list"></div>
-                                                <div id="footnotetext">
-                                                        <p>The content on this domain and on my linked profiles are my own and do not neccessarily reflect the views of my employer.</p>
-                                                </div>
-                                                <div class="clear"></div>
-
-                                            </div>
-                                            <!-- End .profile -->
-
-                                            <!-- .resume -->
-                                            <div id="resume" class="content_2">
-                                                <!-- .title -->
-                                                <h1 class="h-bloc">Resume Info</h1>
-
-                                                <div class="row">
-
-                                                    <!-- .resume-right -->
-                                                    <!-- <div class="col-md-6">-->
-                                                    <!-- .resume-left -->
-                                                    <div class="col-md-6 resume-left">
-                                                        
-                                                        
-                                                        <!-- .title_content -->
-                                                        <div class="title_content" style="margin-bottom:5px">
-                                                            <div class="text_content">Experience</div>
-                                                            <div class="clear"></div>
-                                                        </div>
-                                                        <!-- /.title_content -->
-
-                                                        <!-- .attributes -->
-                                                        <ul class="attributes">
-                                                            <li class="first">
-                                                                <h5>Senior Consultant <span class="duration"><i class="fa fa-calendar color"></i> 2016 - NOW</span></h5>
-                                                                <h6><span class="fa fa-briefcase"></span> IBM</h6>
-                                                                <p>Helped clients undergo digital transformations to improve business operations and performance.  Download CV for project details.
-                                                                </p>
-                                                            </li>
-                                                            <li>
-                                                                <h5>Performance Analyst <span class="duration"><i class="fa fa-calendar color"></i> 2012 - 2016</span></h5>
-                                                                <h6><span class="fa fa-briefcase"></span> First Rate</h6>
-                                                                <p>Served performance solutions for clients in banking or other financial services.  Further details can be found on my CV. </p>
-                                                            </li>
-
-                                                        </ul>
-
-                                                        <!-- .title_content -->
-                                                        <div class="title_content" style="float: none;">
-                                                            <div class="text_content">Applications and Tools</div>
-                                                            <div class="clear"></div>
-                                                        </div>
-                                                        <!-- /.title_content -->
-
-                                                        <div class="skills">
-                                                            <!-- .skillbar -->
-                                                            <div class="skillbar clearfix" data-percent="25%">
-                                                                <div class="skillbar-title"><span>Octave</span></div>
-                                                                <div class="skillbar-bar"></div>
-                                                                <div class="skill-bar-percent">25%</div>
-                                                            </div>
-
-                                                            <!-- /.skillbar -->
-
-                                                            <!-- .skillbar -->
-                                                            <div class="skillbar clearfix" data-percent="50%">
-                                                                <div class="skillbar-title"><span>SPSS Modeler</span></div>
-                                                                <div class="skillbar-bar"></div>
-                                                                <div class="skill-bar-percent">50%</div>
-                                                            </div>
-                                                            <!-- /.skillbar -->
-
-                                                            <!-- .skillbar -->
-                                                            <div class="skillbar clearfix" data-percent="50%">
-                                                                <div class="skillbar-title"><span>STATA</span></div>
-                                                                <div class="skillbar-bar"></div>
-                                                                <div class="skill-bar-percent">50%</div>
-                                                            </div>
-                                                            <!-- /.skillbar -->
-
-                                                            <!-- .skillbar -->
-                                                            <div class="skillbar clearfix" data-percent="25%">
-                                                                <div class="skillbar-title"><span>SPSS Statistics</span></div>
-                                                                <div class="skillbar-bar"></div>
-                                                                <div class="skill-bar-percent">25%</div>
-                                                            </div>
-                                                            <!-- /.skillbar -->
-                                                        </div>
-
-
-                                                        <!-- .title_content -->
-                                                        <div class="title_content" style="float: none;">
-                                                            <div class="text_content">Programming Skills</div>
-                                                            <div class="clear"></div>
-                                                        </div>
-                                                        <!-- /.title_content -->
-
-                                                        <div class="skills">
-                                                            <!-- .skillbar -->
-                                                            <div class="skillbar clearfix" data-percent="75%">
-                                                                <div class="skillbar-title"><span>Python</span></div>
-                                                                <div class="skillbar-bar"></div>
-                                                                <div class="skill-bar-percent">75%</div>
-                                                            </div>
-                                                            <!-- /.skillbar -->
-
-                                                            <!-- .skillbar -->
-                                                            <div class="skillbar clearfix" data-percent="25%">
-                                                                <div class="skillbar-title"><span>R</span></div>
-                                                                <div class="skillbar-bar"></div>
-                                                                <div class="skill-bar-percent">25%</div>
-                                                            </div>
-                                                            <!-- /.skillbar -->
-
-                                                            <!-- .skillbar -->
-                                                            <div class="skillbar clearfix" data-percent="75%">
-                                                                <div class="skillbar-title"><span>SQL</span></div>
-                                                                <div class="skillbar-bar"></div>
-                                                                <div class="skill-bar-percent">75%</div>
-                                                            </div>
-                                                            <!-- /.skillbar -->
-                                                            
-                                                            <!-- .skillbar -->
-                                                            <div class="skillbar clearfix" data-percent="75%">
-                                                                <div class="skillbar-title"><span>HTML</span></div>
-                                                                <div class="skillbar-bar"></div>
-                                                                <div class="skill-bar-percent">75%</div>
-                                                            </div>
-                                                            <!-- /.skillbar -->
-
-                                                            <!-- .skillbar -->
-                                                            <div class="skillbar clearfix" data-percent="50%">
-                                                                <div class="skillbar-title"><span>Javascript</span></div>
-                                                                <div class="skillbar-bar"></div>
-                                                                <div class="skill-bar-percent">50%</div>
-                                                            </div>
-                                                            <!-- /.skillbar -->
-                                                        </div>
-
-
-                                                        <!-- .title_content -->
-                                                        <div class="title_content" style="float: none;">
-                                                            <div class="text_content">Office Skills</div>
-                                                            <div class="clear"></div>
-                                                        </div>
-                                                        <!-- /.title_content -->
-
-                                                        <div class="skills">
-                                                            <!-- .skillbar -->
-                                                            <div class="skillbar clearfix" data-percent="75%">
-                                                                <div class="skillbar-title"><span>MS Excel</span></div>
-                                                                <div class="skillbar-bar"></div>
-                                                                <div class="skill-bar-percent">75%</div>
-                                                            </div>
-                                                            <!-- /.skillbar -->
-
-                                                            <!-- .skillbar -->
-                                                            <div class="skillbar clearfix " data-percent="100%">
-                                                                <div class="skillbar-title"><span>MS Visio</span></div>
-                                                                <div class="skillbar-bar"></div>
-                                                                <div class="skill-bar-percent">100%</div>
-                                                            </div>
-                                                            <!-- /.skillbar -->
-
-                                                            <!-- .skillbar -->
-                                                            <div class="skillbar clearfix " data-percent="75%">
-                                                                <div class="skillbar-title"><span>MS Powerpoint</span></div>
-                                                                <div class="skillbar-bar"></div>
-                                                                <div class="skill-bar-percent">75%</div>
-                                                            </div>
-                                                            <!-- /.skillbar -->
-
-                                                            <!-- .skillbar -->
-                                                            <div class="skillbar clearfix " data-percent="50%">
-                                                                <div class="skillbar-title"><span>MS Project</span></div>
-                                                                <div class="skillbar-bar"></div>
-                                                                <div class="skill-bar-percent">50%</div>
-                                                            </div>
-                                                            <!-- /.skillbar -->
-                                                        </div>
-                                                        
-                                                        <!-- .title_content -->
-                                                        <div class="title_content" style="float: none;">
-                                                            <div class="text_content">Soft Skills</div>
-                                                            <div class="clear"></div>
-                                                        </div>
-                                                        <!-- /.title_content -->
-
-                                                        <div class="skills">
-                                                            <!-- .skillbar -->
-                                                            <div class="skillbar clearfix" data-percent="75%">
-                                                                <div class="skillbar-title"><span>Agile</span></div>
-                                                                <div class="skillbar-bar"></div>
-                                                                <div class="skill-bar-percent">75%</div>
-                                                            </div>
-                                                            <!-- /.skillbar -->
-
-                                                            <!-- .skillbar -->
-                                                            <div class="skillbar clearfix " data-percent="50%">
-                                                                <div class="skillbar-title"><span>Design Thinking</span></div>
-                                                                <div class="skillbar-bar"></div>
-                                                                <div class="skill-bar-percent">50%</div>
-                                                            </div>
-                                                            <!-- /.skillbar -->
-
-                                                            <!-- .skillbar -->
-                                                            <div class="skillbar clearfix " data-percent="75%">
-                                                                <div class="skillbar-title"><span>Consulting</span></div>
-                                                                <div class="skillbar-bar"></div>
-                                                                <div class="skill-bar-percent">75%</div>
-                                                            </div>
-                                                            <!-- /.skillbar -->
-
-                                                            <!-- .skillbar -->
-                                                            <div class="skillbar clearfix " data-percent="75%">
-                                                                <div class="skillbar-title"><span>Client Management</span></div>
-                                                                <div class="skillbar-bar"></div>
-                                                                <div class="skill-bar-percent">75%</div>
-                                                            </div>
-                                                            <!-- /.skillbar -->
-                                                        </div>
-                                                        
-                                                         <!-- .title_content -->
-                                                        <div class="title_content" style="float: none;">
-                                                            <div class="text_content">Cloud Platforms</div>
-                                                            <div class="clear"></div>
-                                                        </div>
-                                                        <!-- /.title_content -->
-
-                                                        <div class="skills">
-                                                            <!-- .skillbar -->
-                                                            <div class="skillbar clearfix" data-percent="100%">
-                                                                <div class="skillbar-title"><span>IBM Cloud</span></div>
-                                                                <div class="skillbar-bar"></div>
-                                                                <div class="skill-bar-percent">100%</div>
-                                                            </div>
-                                                            <!-- /.skillbar -->
-
-                                                            <!-- .skillbar -->
-                                                            <div class="skillbar clearfix " data-percent="50%">
-                                                                <div class="skillbar-title"><span>Google Cloud</span></div>
-                                                                <div class="skillbar-bar"></div>
-                                                                <div class="skill-bar-percent">50%</div>
-                                                            </div>
-                                                            <!-- /.skillbar -->
-
-
-                                                            <!-- .skillbar -->
-                                                            <div class="skillbar clearfix " data-percent="25%">
-                                                                <div class="skillbar-title"><span>Amazon Web Services</span></div>
-                                                                <div class="skillbar-bar"></div>
-                                                                <div class="skill-bar-percent">25%</div>
-                                                            </div>
-                                                            <!-- /.skillbar -->
-                                                        </div>
-
-
-                                                        
-
-
-
-
-
-                                                        <!-- .title_content -->
-                                                        <div class="title_content" style="float: none;">
-                                                            <div class="text_content">My Resume</div>
-                                                            <div class="clear"></div>
-                                                        </div>
-                                                        <!-- /.title_content -->
-
-                                                        <!-- .download_resume -->
-                                                         <a class="download" style="margin:0;float: left;" href="https://github.com/lilamcodes/website/blob/master/CV-updated2.pdf">
-                                                             <span data-hover="Download My Resume"><i class="glyphicon glyphicon-download-alt"></i> Download My Resume</span>
-                                                         </a>
-                                                         <!-- /.download_resume -->
-
-                                                    </div>
-                                                    <!-- /.resume-right -->
-
-
-
-                                                    <!-- .resume-left -->
-                                                    <div class="col-md-6 resume-left">
-                                                        
-                                                        
-                                                        <!-- .title_content -->
-                                                        <div class="title_content">
-                                                            <div class="text_content">Education</div>
-                                                            <div class="clear"></div>
-                                                        </div>
-                                                        <!-- /.title_content -->
-
-                                                        <!-- .attributes -->
-                                                        <ul class="attributes">
-                                                            <li class="first">
-                                                                <h5>Masters in Economics <span class="duration"><i class="fa fa-calendar color"></i> 2013 - 2015</span></h5>
-                                                                <h6><span class="fa fa-book"></span>University of Texas at Arlington</h6>
-
-                                                            </li>
-                                                            <li>
-                                                                <h5>Bachelors in Finance <span class="duration"><i class="fa fa-calendar color"></i> 2009 - 2012</span></h5>
-                                                                <h6><span class="fa fa-book"></span>University of Texas at Arlington</h6>
-
-                                                            </li>
-                                                        </ul>
-                                                        <!-- /.attributes -->
-                                                        <br>
-
-
-                                                        <!-- .title_content -->
-                                                        <div class="title_content">
-                                                            <div class="text_content">Certifications</div>
-                                                            <div class="clear"></div>
-                                                        </div>
-                                                        <!-- /.title_content -->
-
-                                                        <!-- .attributes -->
-                                                        <ul class="attributes">
-                                                            <li class="first">
-                                                                <h5>Cognitive Services - Data Scientist <span class="duration"><i class="fa fa-calendar color"></i> 2018</span></h5>
-                                                                <h6><span class="fa fa-trophy"></span> IBM</h6>
-                                                                <p><a href=https://www.youracclaim.com/badges/14f5b606-ec7c-4a3e-bb7b-3db19f676750/linked_in_profile”> Validated Data Scientist</a> -
-                                                                  The badge holder has a comprehensive view of the role of a data scientist at IBM and understands how to manipulate, visualize and analyze data.
-                                                                  The badge holder is able to apply these tools to a business problem and communicate his or her findings to a client in a coherent manner.</p>
-                                                            </li>
-                                                            
-                                                            <li>
-                                                                <h5>Neural Networks & Deep Learning<span class="duration"><i class="fa fa-calendar color"></i> 2019</span></h5>
-                                                                <h6><span class="fa fa-trophy"></span> Deeplearning.ai</h6>
-                                                                <p><a href=https://www.coursera.org/account/accomplishments/verify/UMDQRZ8T8TPC> Deep Learning Engineer</a> -
-                                                                  This course teaches the foundations of deep learning which includes understanding the major technology trends driving deep learning;
-                                                                  build, train apply fully connected deep neural networks; implement efficient (vectorized) neural networks; and understand key parameters in a network's architecture.</p>
-                                                            </li>
-                                                            <li>
-                                                                <h5>Introduction to Apache Hadoop <span class="duration"><i class="fa fa-calendar color"></i> 2019</span></h5>
-                                                                <h6><span class="fa fa-trophy"></span>The Linux Foundation</h6>
-                                                                <p><a href=https://courses.edx.org/certificates/6356206ec01b4bb49b44c0051c167477> Basics</a> -
-                                                                  High-level overview of Hadoop and some of its quintessential ecosystem project.  
-                                                                  Learn if a Hadoop-driven big data strategy is the right solution to meet the data retention and analytics needs of an IT organization.</p>
-                                                            </li>
-                                                            <li>
-                                                                <h5>GBS Consulting Academy <span class="duration"><i class="fa fa-calendar color"></i> 2019</span></h5>
-                                                                <h6><span class="fa fa-trophy"></span>IBM</h6>
-                                                                <p><a href=PENDING> Business Consultant</a> -
-                                                                  The GBS North America Consulting Academy is an immersive, blended-learning journey that fosters skill development in consulting, leadership, and critical thinking. </p>
-                                                                
-                                                            </li>
-                                                            
-                                                            <li>
-                                                                <h5>Data Engineering On GCP <span class="duration"><i class="fa fa-calendar color"></i> 2019</span></h5>
-                                                                <h6><span class="fa fa-trophy"></span> Google Cloud</h6>
-                                                                <p><a href=PENDING> PENDING</a> -
-                                                                 Accelerated online specialization provides participants an introduction to designing and building data processing systems on Google Cloud Platform.  Participants design data processing systems, build end-to-end data pipelines, analyze data and carry out machine learning.  </p>
-                                                            </li>
-                                                            
-                                                            <li>
-                                                                <h5>Pending <span class="duration"><i class="fa fa-calendar color"></i> 2019</span></h5>
-                                                                <h6><span class="fa fa-trophy"></span> Amazon Web Services</h6>
-                                                                <p><a href=PENDING> PENDING</a> -
-                                                                 pending  </p>
-                                                            </li>
-
-                                                        </ul>
-                                                        <!-- /.attributes -->
-                                                        <br>
-
-                                                    </div>
-                                                    <!-- /.resume-left -->
-                                                </div>
-
-                                                <div style="clear: both"></div>
-
-
-                                                <!-- client reference -->
-                                                <div class="row">
-                                                    <div class="col-md-12">
-
-                                                        <div class="reference clearfix">
-
-                                                            <!-- .title_content -->
-                                                            <div class="title_content" style="margin-bottom:5px">
-                                                                <div class="text_content">Awards</div>
-                                                                <div class="clear"></div>
-                                                            </div>
-                                                            <!-- /.title_content -->
-
-
-                                                            <ul>
-                                                              <li class="clearfix">
-                                                                   <img src="./images/IBMLogo.png" class="img_reference" width="100" height="100" alt="">
-                                                                   <p>“Manager's Choice awarded from Mark Branson for demonstrating the following IBM Practice: Put the client first.”</p>
-                                                                   <span>IBM Manager's Choice Award, 6/2019</span>
-                                                                </li>
-                                                                <li class="clearfix">
-                                                                   <img src="./images/IBMLogo.png" class="img_reference" width="100" height="100" alt="">
-                                                                   <p>“Manager's Choice awarded from Kaushik Samanta for demonstrating the following IBM Practice: Relentlessly reinvent.”</p>
-                                                                   <span>IBM Manager's Choice Award, 11/2018</span>
-                                                                </li>
-                                                                <li class="clearfix">
-                                                                   <img src="./images/IBMLogo.png" class="img_reference" width="100" height="100" alt="">
-                                                                   <p>“Manager's Choice awarded from David Feshbach for demonstrating the following IBM Practice: Put the client first.”</p>
-                                                                   <span>IBM Manager's Choice Award, 9/2017</span>
-                                                               </li>
-                                                               <li class="clearfix">
-                                                                   <img src="./images/IBMLogo.png" class="img_reference" width="100" height="100" alt="">
-                                                                   <p>“Manager's Choice awarded from Micheal Hennings for demonstrating the following IBM Practice: Share expertise.”</p>
-                                                                   <span>IBM Manager's Choice Award, 6/2017</span>
-                                                               </li>
-                                                               <li class="clearfix">
-                                                                   <img src="./images/IBMLogo.png" class="img_reference" width="100" height="100" alt="">
-                                                                   <p>“Manager's Choice awarded from Jean Glowacki for the practice Dare to Create Original Ideas.”</p>
-                                                                   <span>IBM Manager's Choice Award, 11/2016</span>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-
-
-
-
-                                                    <div style="clear: both"></div>
-                                                </div>
-
-
-                                            </div>
-                                            <!-- End .resume -->
-
-                                            <!-- .portfolio -->
-                                            <div id="portfolio" class="content_2">
-                                                <!-- .title -->
-                                                <h1 class="h-bloc">Public Portfolio</h1>
-
-                                                <!-- .container-portfolio -->
-                                                <div class="container-portfolio">
-
-                                                  <!-- #filters -->
-                                                  <ul id="filters" class="clearfix">
-                                                        <li><span class="filter active" data-filter="catWeb catGraphic catMotion logo">All</span></li>
-                                                        <li><span class="filter" data-filter="catWeb">Artificial Intelligence</span></li>
-                                                        <li><span class="filter" data-filter="catGraphic">Classification</span></li>
-                                                        <li><span class="filter" data-filter="catMotion">Optimization</span></li>
-                                                        <li><span class="filter" data-filter="logo">Other</span></li>
-                                                    </ul>
-                                                    <!-- /#filters -->
-
-                                                    <!-- #portfoliolist -->
-                                                    <div id="portfoliolist">
-
-
-                                                          <div class="view view-first portfolio catWeb" data-cat="catWeb">
-                                                            <img src="https://raw.githubusercontent.com/lilamcodes/website/master/images/alexa_app.jpg" max-width="220px" max-height="165px"/>
-                                                            <div class="mask">
-                                                                <h2>Alexa App</h2>
-                                                                <p>Complaint Listener for Amazon; (Javascript, AWS)</p>
-
-                                                        
-                                                                <a href="https://github.com/lilamcodes/ComplaintListener" class="info external" target="_blank">
-                                                                <i class="fa fa-search"></i>
-                                                                </a>
-
-                                                                    <a href="" class="info external">
-                                                                    <i class="fa fa-link"></i>
-                                                                </a>
-                                                                
-
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="view view-first portfolio logo" data-cat="logo">
-                                                            <img src="https://raw.githubusercontent.com/lilamcodes/website/master/images/credit_card3.jpg" max-width="220px" max-height="165px"/>
-                                                            
-                                                            
-                                                            <div class="mask">
-                                                                <h2>CC Validator</h2>
-                                                                <p>Checks credit card number. (Python)</p>
-
-                                                                  <!--<a href="http://placehold.it/600x849" rel="portfolio" class="info open-imag">
-                                                                    <i class="fa fa-search"></i>  </a>-->
-
-
-                                                                    <a href="" class="info external">
-                                                                <i class="fa fa-search"></i></a>
-
-                                                                <!--<a href="http://www.youtube.com/watch?v=c9MnSeYYtYY" rel="portfolio" class="info external"><i class="fa fa-play"></i></a>-->
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="view view-first portfolio logo" data-cat="logo">
-                                                            <img src="https://raw.githubusercontent.com/lilamcodes/website/master/images/citibike.jpg" max-width="220px" max-height="165px"/>
-                                                            <div class="mask">
-                                                                <h2>NYC Citibike 2017</h2>
-                                                                <p>Citibike analysis &amp; trip duration predictor. (Python)</p>
-                                                                 <a href="http://placehold.it/600x849" rel="portfolio" class="info open-imag">
-                                                                    <i class="fa fa-search"></i>
-                                                                </a>
-                                                                <a href="http://themeforest.net/item/flexyvcard-responsive-vcard-template-/7158750?WT.ac=solid_search_thumb&amp;WT.seg_1=solid_search_thumb&amp;WT.z_author=flexycodes?width=800&amp;height=500&amp;iframe=true" rel="portfolio" class="info external" target="_blank">
-                                                                <i class="fa fa-link"></i>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="view view-first portfolio catWeb" data-cat="catWeb">
-                                                            <img src="https://raw.githubusercontent.com/lilamcodes/website/master/images/watson.jpg" />
-                                                            <div class="mask">
-                                                                <h2>Digital Agent</h2>
-                                                                <p>Watson Assistant (IBM Cloud; Watson APIs).</p>
-
-                                                                 <a href="http://placehold.it/600x849" rel="portfolio" class="info open-imag">
-                                                                    <i class="fa fa-search"></i>
-                                                                </a>
-                                                                <a href="http://themeforest.net/?width=800&amp;height=500&amp;iframe=true" rel="portfolio"  class="info external"><i class="fa fa-link"></i></a>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="view view-first portfolio catWeb" data-cat="catWeb">
-                                                            <img src="https://raw.githubusercontent.com/lilamcodes/website/master/images/pizza2.jpg" />
-                                                            <div class="mask">
-                                                                <h2>Pizza Bot</h2>
-                                                                <p>Pizza Ordering Chatbot (GCP; Dialogflow)</p>
-
-                                                                 <a href="http://placehold.it/220x165" rel="portfolio" class="info open-imag">
-                                                                    <i class="fa fa-search"></i>
-                                                                </a>
-                                                                <a href="http://vimeo.com/7449107" rel="portfolio" class="info external"><i class="fa fa-play"></i></a>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="view view-first portfolio catMotion" data-cat="catMotion">
-
-                                                            <img src="http://placehold.it/220x165" />
-                                                            <div class="mask">
-                                                                <h2>Project Name</h2>
-                                                                <p>A wonderful serenity has taken possession of my entire soul.</p>
-
-                                                                 <a href="http://placehold.it/220x165" rel="portfolio" class="info open-imag">
-                                                                    <i class="fa fa-search"></i>
-                                                                </a>
-                                                                <a href="http://themeforest.net/user/flexycodes" target="_blank" class="info external"><i class="fa fa-link"></i></a>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="view view-first portfolio catGraphic" data-cat="catGraphic">
-                                                            <img src="https://raw.githubusercontent.com/lilamcodes/website/master/images/cat1.jpg" max-width="220px" max-height="165px"/>
-                                                            
-                                                            <div class="mask">
-                                                                <h2>Image Classifier</h2>
-                                                                <p>Cat or not a cat detector (Python)</p>
-
-                                                                 <a href="http://placehold.it/220x165" rel="portfolio" class="info open-imag">
-                                                                    <i class="fa fa-search"></i>
-                                                                </a>
-                                                                <a href="http://themeforest.net/user/flexycodes" target="_blank" class="info external"><i class="fa fa-link"></i></a>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="view view-first portfolio logo" data-cat="logo">
-                                                            <img src="http://placehold.it/220x165" />
-                                                            <div class="mask">
-                                                                <h2>Project Name</h2>
-                                                                <p>A wonderful serenity has taken possession of my entire soul.</p>
-
-                                                                 <a href="http://placehold.it/600x849" rel="portfolio" class="info open-imag">
-                                                                    <i class="fa fa-search"></i>
-                                                                </a>
-                                                                <a href="http://themeforest.net/user/flexycodes" target="_blank" class="info external"><i class="fa fa-link"></i></a>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="view view-first portfolio catWeb" data-cat="catWeb">
-                                                            <img src="http://placehold.it/220x165" />
-                                                            <div class="mask">
-                                                                <h2>Project Name</h2>
-                                                                <p>A wonderful serenity has taken possession of my entire soul.</p>
-
-                                                                 <a href="http://placehold.it/600x849" rel="portfolio" class="info open-imag">
-                                                                    <i class="fa fa-search"></i>
-                                                                </a>
-                                                                <a href="http://themeforest.net/user/flexycodes" target="_blank" class="info external"><i class="fa fa-link"></i></a>
-                                                            </div>
-                                                        </div>
-
-                                                         <div class="view view-first portfolio catGraphic" data-cat="catGraphic">
-                                                            <img src="http://placehold.it/220x165" />
-                                                            <div class="mask">
-                                                                <h2>Project Name</h2>
-                                                                <p>A wonderful serenity has taken possession of my entire soul.</p>
-
-                                                                 <a href="http://placehold.it/600x849" rel="portfolio" class="info open-imag">
-                                                                    <i class="fa fa-search"></i>
-                                                                </a>
-                                                                <a href="http://themeforest.net/user/flexycodes" target="_blank" class="info external"><i class="fa fa-link"></i></a>
-                                                            </div>
-                                                        </div>
-
-                                                         <div class="view view-first portfolio logo" data-cat="logo">
-                                                            <img src="http://placehold.it/220x165" />
-                                                            <div class="mask">
-                                                                <h2>Project Name</h2>
-                                                                <p>A wonderful serenity has taken possession of my entire soul.</p>
-
-                                                                 <a href="http://placehold.it/600x849" rel="portfolio" class="info open-imag">
-                                                                    <i class="fa fa-search"></i>
-                                                                </a>
-                                                                <a href="http://themeforest.net/user/flexycodes" target="_blank" class="info external"><i class="fa fa-link"></i></a>
-                                                            </div>
-                                                        </div>
-
-                                                         <div class="view view-first portfolio logo" data-cat="logo">
-                                                            <img src="http://placehold.it/220x165" />
-                                                            <div class="mask">
-                                                                <h2>Project Name</h2>
-                                                                <p>A wonderful serenity has taken possession of my entire soul.</p>
-
-                                                                 <a href="http://placehold.it/600x849" rel="portfolio" target="_blank" class="info open-imag">
-                                                                    <i class="fa fa-search"></i>
-                                                                </a>
-                                                                <a href="http://themeforest.net/user/flexycodes" class="info external"><i class="fa fa-link"></i></a>
-                                                            </div>
-                                                        </div>
-
-                                                         <div class="view view-first portfolio catGraphic" data-cat="catGraphic">
-                                                            <img src="http://placehold.it/220x165" />
-                                                            <div class="mask">
-                                                                <h2>Project Name</h2>
-                                                                <p>A wonderful serenity has taken possession of my entire soul.</p>
-
-                                                                 <a href="http://placehold.it/600x849" rel="portfolio" class="info open-imag">
-                                                                    <i class="fa fa-search"></i>
-                                                                </a>
-                                                                <a href="http://themeforest.net/user/flexycodes" target="_blank" class="info external"><i class="fa fa-link"></i></a>
-                                                            </div>
-                                                        </div>
-
-                                                         <div class="view view-first portfolio logo" data-cat="logo">
-                                                            <img src="http://placehold.it/220x165" />
-                                                            <div class="mask">
-                                                                <h2>Project Name</h2>
-                                                                <p>A wonderful serenity has taken possession of my entire soul.</p>
-
-                                                                 <a href="http://placehold.it/600x849" rel="portfolio" class="info open-imag">
-                                                                    <i class="fa fa-search"></i>
-                                                                </a>
-                                                                <a href="http://themeforest.net/user/flexycodes/portfolio" target="_blank" class="info external"><i class="fa fa-link"></i></a>
-                                                            </div>
-                                                        </div>
-
-                                                         <div class="view view-first portfolio catGraphic" data-cat="catGraphic">
-                                                            <img src="http://placehold.it/220x165" />
-                                                            <div class="mask">
-                                                                <h2>Project Name</h2>
-                                                                <p>A wonderful serenity has taken possession of my entire soul.</p>
-
-                                                                 <a href="http://placehold.it/600x849" rel="portfolio" class="info open-imag">
-                                                                    <i class="fa fa-search"></i>
-                                                                </a>
-                                                                <a href="http://themeforest.net/user/flexycodes" target="_blank" class="info external"><i class="fa fa-link"></i></a>
-                                                            </div>
-                                                        </div>
-
-
-                                                        <div class="clear"></div>
-
-                                                  </div>
-                                                    <!-- #images/portfoliolist -->
-                                                </div>
-                                                <!-- /.container-portfolio -->
-                                            </div>
-                                            <!-- End .portfolio -->
-
-
-
-                                        </div>
-                                        <!-- End #resp-tabs-container -->
-
-                                    </div><!-- End verticalTab -->
-
-                                </div><!-- End flexy_content -->
-
-
-                            </div><!-- End row -->
-
-                        </div><!-- End col-md-12 -->
-
-                    </div><!-- End row -->
-
-                </div><!-- End container -->
-
-            </section>
-            <!-- End Content -->
-
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cardstock Clarity — Mindfulness & Card Work</title>
+  <meta name="description" content="Mindfulness-based card readings and art therapy to support reflection, growth, and gentle action." />
+  <link rel="icon" href="data:,">
+  <style>
+    :root{
+      --bg:#ffffff; --ink:#1a1a1a; --muted:#6b7280; --brand:#0ea5e9; --card:#f8fafc; --ring:#e5e7eb;
+      --radius:14px; --space:clamp(16px, 2.6vw, 28px); --w:1080px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; font:16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji","Segoe UI Emoji";
+      color:var(--ink); background:var(--bg);
+      -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+    }
+    a{color:var(--brand); text-decoration:underline}
+    header, main, footer{width:min(100%, var(--w)); margin-inline:auto; padding:0 var(--space)}
+    .sitehead{
+      padding-block: calc(var(--space) * 1.25);
+      display:flex; align-items:center; justify-content:space-between; gap:12px;
+      border-bottom:1px solid var(--ring);
+    }
+    .logo{font-weight:800; letter-spacing:.2px; font-size:clamp(18px, 2.4vw, 22px)}
+    nav a{margin-left:16px; text-decoration:none; color:var(--ink)}
+    nav a:hover{color:var(--brand)}
+    .hero{
+      padding-block: clamp(32px, 8vw, 80px);
+      display:grid; gap:18px;
+    }
+    h1{font-size:clamp(28px, 4.6vw, 44px); line-height:1.15; margin:0}
+    .sub{color:var(--muted); margin:0}
+    .cta{display:flex; gap:12px; flex-wrap:wrap; margin-top:8px}
+    .btn{
+      display:inline-block; padding:10px 16px; border:1px solid var(--ring);
+      border-radius:999px; text-decoration:none; font-weight:600; background:#fff;
+    }
+    .btn.primary{background:var(--ink); color:#fff; border-color:var(--ink)}
+    .grid{
+      display:grid; gap:16px; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));
+    }
+    .card{
+      background:var(--card); border:1px solid var(--ring); border-radius:var(--radius); overflow:hidden;
+    }
+    .card img{display:block; width:100%; height:auto; aspect-ratio:4/3; object-fit:cover; background:#e5e7eb}
+    .card .pad{padding:14px}
+    h2{font-size:clamp(20px, 3vw, 28px); margin:0 0 8px}
+    section{padding-block: clamp(20px, 5vw, 44px)}
+    .two{display:grid; gap:20px; grid-template-columns:1.1fr .9fr}
+    @media (max-width: 860px){ .two{grid-template-columns:1fr} }
+    ul.clean{margin:8px 0 0; padding:0; list-style:none}
+    ul.clean li{margin:6px 0}
+    .kicker{font-size:.9rem; color:var(--muted); text-transform:uppercase; letter-spacing:.12em}
+    footer{padding-block:30px; border-top:1px solid var(--ring); color:var(--muted); font-size:.95rem}
+    .small{font-size:.95rem}
+    /* smooth anchor scroll without JS */
+    html{scroll-behavior:smooth}
+  </style>
+</head>
+<body>
+
+  <header class="sitehead">
+    <div class="logo">Cardstock Clarity</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#offerings">Offerings</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <p class="kicker">Mindfulness • Cards • Creative Process</p>
+      <h1>Mindfulness-based card work and art therapy to help you slow down, reflect, and move forward with grace.</h1>
+      <p class="sub">Sessions are dialogues—space to reconnect with your story, notice patterns, and turn insight into gentle, grounded action.</p>
+      <div class="cta">
+        <a class="btn primary" href="#contact">Book a session</a>
+        <a class="btn" href="#portfolio">See portfolio</a>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="two">
+      <div>
+        <h2>About</h2>
+        <p class="small">
+          I’m a mindfulness practitioner blending expressive psychology cards, tarot, and oracle decks as tools for self-reflection
+          (not fortune-telling). These visual systems help surface emotions, patterns, and truths shaping your path. Together we use
+          guided discussion and simple creative exercises to translate insight into next steps.
+        </p>
+        <p class="small">
+          Tarot offers a rich, structured language for the full human experience—growth, challenge, transformation, and renewal.
+          My approach is practical, compassionate, and empowerment-focused.
+        </p>
+      </div>
+      <div class="card">
+        <!-- Replace with your own photo: /images/linda.jpg -->
+        <img src="images/placeholder.jpg" alt="Linda — Cardstock Clarity" loading="lazy" decoding="async">
+        <div class="pad">
+          <strong>Linda Lam</strong><br>
+          <span class="small" style="color:var(--muted)">Mindfulness & Card Guide</span>
         </div>
-        <!-- End wrapper -->
+      </div>
+    </section>
 
+    <!-- OFFERINGS -->
+    <section id="offerings">
+      <h2>Offerings</h2>
+      <div class="grid">
+        <article class="card">
+          <img src="images/placeholder.jpg" alt="1:1 Session" loading="lazy" decoding="async">
+          <div class="pad">
+            <h3 style="margin:0 0 4px">1:1 Sessions</h3>
+            <p class="small">60–75 minutes of mindful card work and reflective dialogue. Leave with 1–3 grounded actions.</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="images/placeholder.jpg" alt="Creative Workshops" loading="lazy" decoding="async">
+          <div class="pad">
+            <h3 style="margin:0 0 4px">Creative Workshops</h3>
+            <p class="small">Small-group explorations using art prompts and spreads to unlock voice, clarity, and courage.</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="images/placeholder.jpg" alt="Study Groups" loading="lazy" decoding="async">
+          <div class="pad">
+            <h3 style="margin:0 0 4px">Study Groups</h3>
+            <p class="small">Gentle introductions to Lenormand, I Ching-inspired decks, and mindful reading practice.</p>
+          </div>
+        </article>
+      </div>
+    </section>
 
-        <!-- jquery | jQuery 1.11.0 -->
-        <!-- Credits: http://jquery.com -->
-        <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- PORTFOLIO -->
+    <section id="portfolio">
+      <h2>Portfolio</h2>
+      <div class="grid">
+        <!-- Duplicate/replace cards as needed -->
+        <a class="card" href="#" aria-label="Case Study 1">
+          <img src="images/placeholder.jpg" alt="Case Study 1" loading="lazy" decoding="async">
+          <div class="pad">
+            <strong>Case Study: Gentle Decision Spread</strong>
+            <p class="small">A 5-card framework to clarify options with compassion.</p>
+          </div>
+        </a>
+        <a class="card" href="#" aria-label="Case Study 2">
+          <img src="images/placeholder.jpg" alt="Case Study 2" loading="lazy" decoding="async">
+          <div class="pad">
+            <strong>Workshop: Voice Unveiled</strong>
+            <p class="small">Art-supported prompts to express, share, and be heard.</p>
+          </div>
+        </a>
+        <a class="card" href="#" aria-label="Case Study 3">
+          <img src="images/placeholder.jpg" alt="Case Study 3" loading="lazy" decoding="async">
+          <div class="pad">
+            <strong>Lenormand 101 Slide Kit</strong>
+            <p class="small">Beginner slides for literal, practical readings.</p>
+          </div>
+        </a>
+      </div>
+    </section>
 
-        <!-- Js | bootstrap -->
-        <!-- Credits: http://getbootstrap.com/ -->
-        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p class="small">
+        Email me at <a href="mailto:cardstockclarity@gmail.com">cardstockclarity@gmail.com</a> or book via
+        <a href="#">Calendly</a> (optional). I’m based in Chicago (CST) and meet online or in person.
+      </p>
+      <ul class="clean small">
+        <li>Instagram: <a href="https://instagram.com/" rel="me">/yourhandle</a></li>
+        <li>YouTube: <a href="https://youtube.com/" rel="me">Cardstock Chronicles</a></li>
+        <li>GitHub: <a href="https://github.com/cardstockclarity" rel="me">/cardstockclarity</a></li>
+      </ul>
+    </section>
+  </main>
 
-        <!-- Js | jquery.cycle -->
-        <!-- Credits: https://github.com/malsup/cycle2 -->
-        <script type="text/javascript" src="js/jquery.cycle2.min.js"></script>
+  <footer>
+    <div>&copy; <span id="y"></span> Cardstock Clarity. All rights reserved.</div>
+  </footer>
 
-        <!-- jquery | rotate and portfolio -->
-        <!-- Credits: http://jquery.com -->
-        <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
-        <script type="text/javascript" src="js/HeadImage.js"></script>
-
-        <!-- Js | easyResponsiveTabs -->
-        <!-- Credits: http://webtrendset.com/demo/easy-responsive-tabs/Index.html -->
-        <script type="text/javascript" src="js/easyResponsiveTabs.min.js"></script>
-
-        <!-- Js | mCustomScrollbar -->
-        <!-- Credits: http://manos.malihu.gr/jquery-custom-content-scroller -->
-        <script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-
-        <!-- jquery | prettyPhoto -->
-        <!-- Credits: http://www.no-margin-for-errors.com/ -->
-        <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
-
-        <!-- Js | gmaps -->
-        <!-- Credits: http://maps.google.com/maps/api/js?sensor=true-->
-        <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
-        <script type="text/javascript" src="js/gmaps.min.js"></script>
-
-        <!-- Js | Js -->
-        <!-- Credits: http://themeforest.net/user/FlexyCodes -->
-        <script type="text/javascript" src="js/main.js"></script>
-
-        <!-- code js for image rotate -->
-        <script type="text/javascript">
-
-            var mouseX;
-            var mouseY;
-            var imageOne;
-
-            /* Calling the initialization function */
-            $(init);
-
-            /* The images need to re-initialize on load and on resize, or else the areas
-             * where each image is displayed will be wrong. */
-            $(window).load(init);
-            $(window).resize(init);
-
-            /* Setting the mousemove event caller */
-            $(window).mousemove(getMousePosition);
-
-            /* This function is called on document ready, on load and on resize
-             * and initiallizes all the images */
-            function init() {
-
-                /* Instanciate the mouse position variables */
-                mouseX = 0;
-                mouseY = 0;
-
-                /* Instanciate a HeadImage class for every image */
-                imageOne = new HeadImage("one");
-
-            }
-
-            /* This function is called on mouse move and gets the mouse position.
-             * It also calls the HeadImage function to display the correct image*/
-            function getMousePosition(event) {
-
-                /* Setting the mouse position variables */
-                mouseX = event.pageX;
-                mouseY = event.pageY;
-
-                /*Calling the setImageDirection function of the HeadImage class
-                 * to display the correct image*/
-                imageOne.setImageDirection();
-
-            }
-
-        </script>
-
-
-        <!--[if lt IE 9]>
-            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
-    </body>
+  <script>
+    // tiny enhancement: current year, no other JS needed
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
 </html>
