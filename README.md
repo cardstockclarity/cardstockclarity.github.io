@@ -1,1 +1,0 @@
-# cardstockclarity.github.io
