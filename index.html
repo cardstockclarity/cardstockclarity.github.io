@@ -70,13 +70,29 @@
     .small{font-size:.95rem}
     /* smooth anchor scroll without JS */
     html{scroll-behavior:smooth}
+    
+.logo img.banner-logo {
+  height: 240px;      /* about 300% bigger */
+  width: auto;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .logo img.banner-logo {
+    height: 160px;    /* still large, but more reasonable on mobile */
+  }
+}
+  
+  
+  
+  
   </style>
 </head>
 <body>
 
   <header class="sitehead">
   <div class="logo">
-    <img src="https://raw.githubusercontent.com/cardstockclarity/cardstockclarity.github.io/refs/heads/main/images/bannerlogo.png"
+    <img src="https://raw.githubusercontent.com/cardstockclarity/cardstockclarity.github.io/refs/heads/main/images/bannerlogo2.png"
          alt="Cardstock Clarity" class="banner-logo">
   </div>
     
