@@ -4,61 +4,119 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Updates | Cardstock Clarity</title>
+  <meta name="description" content="Latest news and event updates from Cardstock Clarity — mindfulness, art, and card-based introspection.">
   <link rel="icon" href="data:,">
   <style>
-    body {
-      font-family: system-ui, sans-serif;
-      margin: 40px auto;
-      max-width: 800px;
-      line-height: 1.6;
-      color: #1a1a1a;
+    :root {
+      --bg:#ffffff; --ink:#1a1a1a; --muted:#6b7280; --brand:#0ea5e9; --card:#f8fafc; --ring:#e5e7eb;
+      --radius:14px; --space:clamp(16px, 2.6vw, 28px); --w:1080px;
     }
-    h1 {
-      font-size: 2rem;
-      margin-bottom: 10px;
+    *{box-sizing:border-box}
+    body{
+      margin:0; font:16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial;
+      color:var(--ink); background:var(--bg);
     }
-    a {
-      color: #0ea5e9;
-      text-decoration: none;
+    a{color:var(--brand); text-decoration:none}
+    a:hover{text-decoration:underline}
+    header, main, footer{width:min(100%, var(--w)); margin-inline:auto; padding:0 var(--space)}
+    .sitehead{
+      padding-block: calc(var(--space) * 1.25);
+      display:flex; align-items:center; justify-content:space-between; gap:12px;
+      border-bottom:1px solid var(--ring);
     }
-    a:hover {
-      text-decoration: underline;
+    .logo{
+      display:flex; align-items:center; font-weight:300; letter-spacing:.2px;
+      font-size:clamp(20px, 3vw, 28px);
     }
-    .update-box {
-      border: 1px solid #e5e7eb;
-      background: #f8fafc;
-      border-radius: 12px;
-      padding: 20px;
-      margin: 30px 0;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    .logo-icon{
+      height:48px; width:48px; border-radius:50%; object-fit:cover;
+      margin-right:10px; border:2px solid var(--ring);
     }
-    .update-box h2 {
-      margin-top: 0;
-      font-size: 1.4rem;
-      color: #0ea5e9;
+    nav a{margin-left:16px; color:var(--ink)}
+    nav a:hover{color:var(--brand)}
+    h1{font-size:clamp(28px, 4.6vw, 44px); margin:40px 0 16px}
+    h2{font-size:1.4rem; margin-top:0; color:var(--brand)}
+    .update-box{
+      border:1px solid var(--ring);
+      background:var(--card);
+      border-radius:var(--radius);
+      padding:24px;
+      margin:40px 0;
+      box-shadow:0 2px 8px rgba(0,0,0,.05);
+    }
+    footer{
+      padding-block:30px;
+      border-top:1px solid var(--ring);
+      color:var(--muted);
+      font-size:.95rem;
+      text-align:left;
     }
   </style>
 </head>
 <body>
-  <h1>Updates</h1>
-  <p>News, announcements, and upcoming sessions will be shared here.</p>
+  <header class="sitehead">
+    <div class="logo">
+      <img src="https://raw.githubusercontent.com/cardstockclarity/cardstockclarity.github.io/refs/heads/main/images/icon_no_text.png"
+           alt="Cardstock Clarity Icon" class="logo-icon">
+      <span>Cardstock Clarity</span>
+    </div>
+    <nav>
+      <a href="https://cardstockclarity.github.io/">Home</a>
+      <a href="https://cardstockclarity.github.io/updates.html">Updates</a>
+      <a href="https://cardstockclarity.github.io/#about">About</a>
+      <a href="https://cardstockclarity.github.io/#Offerings">Offerings</a>
+      <a href="https://cardstockclarity.github.io/#Tools">Tools</a>
+      <a href="https://cardstockclarity.github.io/#contact">Contact</a>
+    </nav>
+  </header>
 
-  <div class="update-box">
-    <h2>Intro to I-Ching Through Cards – Free Virtual Study Group</h2>
-    <p>
-      I will be hosting a free introductory session exploring the I-Ching system through an oracle card format. 
-      This event offers an accessible way to begin studying the ancient Chinese framework of change and self-reflection 
-      in a modern and visual context.
-    </p>
-    <p>
-      <strong>Format:</strong> Virtual (online)<br>
-      <strong>Cost:</strong> Free<br>
-      <strong>Registration:</strong> Please reserve your spot through Meetup at 
-      <a href="https://www.meetup.com/thespiritualcompass/events/311698604/?eventOrigin=your_events" target="_blank">
-      The Spiritual Compass – I-Ching Study Group</a>.
-    </p>
-  </div>
+  <main>
+    <h1>Updates</h1>
+    <p>Announcements and upcoming sessions will be shared here.</p>
 
-  <p><a href="index.html">← Back to Home</a></p>
+    <!-- Upcoming Event -->
+    <div class="update-box">
+      <h2>Intro to I-Ching Cards Study Group</h2>
+      <p>
+        A free introductory study group will explore the I-Ching system through an oracle card format.
+        This event offers a structured yet intuitive approach to understanding the I-Ching’s philosophy
+        of balance, transformation, and the flow of change.
+      </p>
+      <p>
+        <strong>Format:</strong> Virtual (online)<br>
+        <strong>Date:</strong> November 7, 2025<br>
+        <strong>Cost:</strong> Free<br>
+        <strong>Registration:</strong>
+        <a href="https://www.meetup.com/thespiritualcompass/events/311698604/?eventOrigin=your_events" target="_blank">
+          Register via The Spiritual Compass Meetup</a>
+      </p>
+    </div>
+
+    <!-- Past Event -->
+    <div class="update-box">
+      <h2>Intro to Lenormand Study Group</h2>
+      <p>
+        This past virtual session introduced participants to the Lenormand system — a concise, symbolic
+        card-reading method known for its clarity and practicality. The study group covered the structure
+        of Lenormand cards, the logic behind combinations, and examples of interpreting real-world questions.
+      </p>
+      <p>
+        <strong>Format:</strong> Virtual (online)<br>
+        <strong>Date:</strong> October 26, 2025<br>
+        <strong>Status:</strong> Completed<br>
+        <strong>Session Details:</strong>
+        <a href="https://www.meetup.com/thespiritualcompass/events/311546049/?eventOrigin=your_events" target="_blank">
+          View the event on Meetup</a>
+      </p>
+    </div>
+  </main>
+
+  <footer>
+    <div>&copy; <span id="y"></span> Cardstock Clarity. All rights reserved.</div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
