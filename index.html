@@ -71,6 +71,23 @@
     /* smooth anchor scroll without JS */
     html{scroll-behavior:smooth}
     
+     .logo {
+  display: flex;
+  align-items: center;
+  font-weight: 800;
+  letter-spacing: .2px;
+  font-size: clamp(18px, 2.4vw, 22px);
+}
+
+.logo-icon {
+  height: 78px;          /* adjust for desired size */
+  width: 78px;           /* keep equal for a perfect circle */
+  border-radius: 50%;    /* makes it circular */
+  object-fit: cover;     /* keeps image clean inside circle */
+  margin-right: 10px;     /* space between icon and text */
+  border: 2px solid #e5e7eb; /* optional subtle border */
+}
+    
 
   
   
@@ -82,7 +99,15 @@
 
   <header class="sitehead">
   
-  <div class="logo">Cardstock Clarity</div>
+
+  <div class="logo">
+  <img src="https://raw.githubusercontent.com/cardstockclarity/cardstockclarity.github.io/refs/heads/main/images/logo_no_text.png" 
+       alt="Cardstock Clarity Icon" 
+       class="logo-icon">
+  <span>Cardstock Clarity</span>
+</div>
+  
+  
   <nav>
     <a href="https://cardstockclarity.github.io/">Home</a>
     <a href="#about">About</a>
