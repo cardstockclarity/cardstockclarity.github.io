@@ -1,0 +1,5 @@
+# robots.txt for Cardstock Clarity
+User-agent: *
+Allow: /
+
+Sitemap: https://cardstockclarity.github.io/sitemap.xml
