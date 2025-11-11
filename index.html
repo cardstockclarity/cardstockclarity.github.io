@@ -158,49 +158,60 @@
 		}
 		
 	/* Personalized Immersive Card Readings */
+/* Immersive card: text on left, image fills full height on right */
+
 .immersive-card {
-  display: flex;
-  align-items: stretch;
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  align-items: stretch;           /* was: center */
   background: var(--card);
   border: 1px solid var(--ring);
   border-radius: var(--radius);
   overflow: hidden;
   margin-top: 16px;
-  max-height: 180px; /* limits overall height */
 }
 
-/* Image side */
-.immersive-card img {
-  width: 40%;
-  height: 120px; /* desktop height */
-  object-fit: cover;
-}
-
-/* Text side */
+/* add this rule */
 .immersive-card .pad {
-  width: 60%;
+  grid-column: 1;
   padding: 14px;
+  align-self: start;              /* ⬅ pin text to the top */
+  /* optional: tighten spacing */
+  /* line-height: 1.45; */
 }
 
-/* Responsive layout for smaller screens */
+.immersive-card h3 { margin: 0 0 4px; }
+.immersive-card p { margin-top: 0.4rem; }
+
+/* Image area */
+.immersive-card img {
+  grid-column: 2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: auto;
+  border-top-right-radius: var(--radius);
+  border-bottom-right-radius: var(--radius);
+}
+
+/* Mobile view */
 @media (max-width: 768px) {
   .immersive-card {
-    flex-direction: column;
-    max-height: none; /* allow taller stacking on mobile */
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    align-items: stretch;
   }
-
   .immersive-card img {
+    grid-column: 1;
     width: 100%;
-    height: 100px; /* auto-scale smaller image */
+    height: 100px;
+    border-radius: var(--radius) var(--radius) 0 0;
   }
-
   .immersive-card .pad {
-    width: 100%;
+    grid-column: 1;
     padding: 12px;
   }
 }
-    
-
   
   
   
@@ -345,14 +356,14 @@
 
     
     
-              <!-- Full-width Personalized Immersive Card Readings box -->
+           
 <!-- Full-width Personalized Immersive Card Readings box -->
 <article class="card immersive-card">
   <img src="https://raw.githubusercontent.com/cardstockclarity/cardstockclarity.github.io/refs/heads/main/images/immersive.png" 
        alt="Personalized Immersive Card Readings" loading="lazy" decoding="async">
   <div class="pad">
-    <h3 style="margin:0 0 4px">*NEW*Immersive Card Readings</h3>
-    <p class="small">Available repeat querents only since this is deeply personalized and interactive card reading that combines gamified card readings with music, personalized imagery,
+    <h3 style="margin:0 0 4px">*NEW* Immersive Card Readings</h3>
+    <p class="small">90+ min session only available repeat clients only since this is deeply personalized and interactive card reading that combines gamified card readings with music, personalized imagery,
      and immersive story telling. </p>
   </div>
 </article>
