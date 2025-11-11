@@ -160,10 +160,11 @@
 	/* Personalized Immersive Card Readings */
 /* Immersive card: text on left, image fills full height on right */
 
-.immersive-card {
+/* IMMERSIVE CARD READINGS — FINAL TOP-ALIGNED VERSION */
+.immersive-card{
   display: grid;
-  grid-template-columns: 5fr 1fr;
-  align-items: stretch;           /* was: center */
+  grid-template-columns: 5fr 1fr;     /* text left (5/6), image right (1/6) */
+  align-items: stretch;               /* both cells fill the row height */
   background: var(--card);
   border: 1px solid var(--ring);
   border-radius: var(--radius);
@@ -171,47 +172,56 @@
   margin-top: 16px;
 }
 
-/* add this rule */
-.immersive-card .pad {
+/* TEXT (left) — remove TOP padding so it aligns with the card’s top edge */
+.immersive-card .pad{
   grid-column: 1;
-  padding: 14px;
-  align-self: start;              /* ⬅ pin text to the top */
-  /* optional: tighten spacing */
-  /* line-height: 1.45; */
+  padding: 0 14px 14px 14px;          /* ⬅ was 14px all around; top is now 0 */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;        /* pin content to the top */
+  align-self: start;                  /* ensure the text cell starts at top */
 }
 
-.immersive-card h3 { margin: 0 0 4px; }
-.immersive-card p { margin-top: 0.4rem; }
+/* tighten internal margins so it hugs the top nicely */
+.immersive-card h3{ margin: 0 0 4px; }
+.immersive-card p{  margin: 0.4rem 0 0; }
 
-/* Image area */
-.immersive-card img {
+/* IMAGE (right) — fill full height and crop nicely */
+.immersive-card img{
   grid-column: 2;
   width: 100%;
-  height: 100%;
+  height: 100%;                       /* fill card height */
   object-fit: cover;
-  aspect-ratio: auto;
+  aspect-ratio: auto;                 /* override global 4/3 */
+  align-self: stretch;
+  display: block;                     /* avoid baseline alignment quirks */
   border-top-right-radius: var(--radius);
   border-bottom-right-radius: var(--radius);
 }
 
-/* Mobile view */
-@media (max-width: 768px) {
-  .immersive-card {
+/* MOBILE */
+@media (max-width: 768px){
+  .immersive-card{
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
     align-items: stretch;
   }
-  .immersive-card img {
+  .immersive-card img{
     grid-column: 1;
     width: 100%;
     height: 100px;
+    aspect-ratio: auto;
     border-radius: var(--radius) var(--radius) 0 0;
   }
-  .immersive-card .pad {
+  .immersive-card .pad{
     grid-column: 1;
-    padding: 12px;
+    padding: 12px;                    /* normal padding when stacked */
+    align-self: auto;
   }
 }
+  
+  
+  
   
   
   
@@ -363,8 +373,8 @@
        alt="Personalized Immersive Card Readings" loading="lazy" decoding="async">
   <div class="pad">
     <h3 style="margin:0 0 4px">*NEW* Immersive Card Readings</h3>
-    <p class="small">90+ min session only available repeat clients only since this is deeply personalized and interactive card reading that combines gamified card readings with music, personalized imagery,
-     and immersive story telling. </p>
+    <p class="small">90+ min session only available to repeat clients I've had multiple sessions with already since this is deeply personalized and interactive card reading that combines 
+    gamified card readings with music, personalized imagery, and immersive story telling inspired by RPG games created for you to re-experience you own story from a different perspective with my support and spiritual guidance for an intense therapeutic and healing session. </p>
   </div>
 </article>
 		
