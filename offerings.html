@@ -203,10 +203,9 @@
   .card.immersive-card .imm-photo{
     grid-column: 1;
     width: 100%;
-    height: auto;                        /* ❌ causes collapse */
-    min-height: unset;                   /* ❌ removes required height */
-    aspect-ratio: auto;
-    background-size: contain;
+    min-height: 180px;          /* ✅ ensures the image is always visible */
+    height: auto;               /* fluid height */
+    background-size: contain;   /* fits entire image */
     background-repeat: no-repeat;
     background-position: center;
     border-radius: var(--radius) var(--radius) 0 0;
