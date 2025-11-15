@@ -196,18 +196,18 @@
 /* MOBILE */
 @media (max-width: 768px){
   .card.immersive-card{
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr;      /* stack image + text */
     grid-template-rows: auto auto;
   }
 
   .card.immersive-card .imm-photo{
     grid-column: 1;
     width: 100%;
-    min-height: 180px;          /* ✅ ensures the image is always visible */
-    height: auto;               /* fluid height */
-    background-size: contain;   /* fits entire image */
-    background-repeat: no-repeat;
+    height: auto;
+    min-height: 220px;              /* make the image nice and tall */
+    background-size: cover;         /* image fills the box */
     background-position: center;
+    background-repeat: no-repeat;
     border-radius: var(--radius) var(--radius) 0 0;
   }
 
