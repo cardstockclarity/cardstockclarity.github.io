@@ -149,13 +149,18 @@
 		}
 
 	.logo-icon {
-	  height: 48px;          /* adjust for desired size */
-	  width: 48px;           /* keep equal for a perfect circle */
+	  height: 70px;          /* adjust for desired size */
+	  width: 70px;           /* keep equal for a perfect circle */
 	  border-radius: 50%;    /* makes it circular */
 	  object-fit: cover;     /* keeps image clean inside circle */
 	  margin-right: 10px;     /* space between icon and text */
 	  border: 2px solid #e5e7eb; /* optional subtle border */
 		}
+		
+	.header-tagline {
+  		margin-top: 0;   /* default was slightly larger from .kicker */
+  		line-height: 1.1; /* optional: makes it sit visually closer */
+			}
 		
 
   
@@ -170,7 +175,13 @@
   <img src="https://raw.githubusercontent.com/cardstockclarity/cardstockclarity.github.io/refs/heads/main/images/icon_no_text.png" 
        alt="Cardstock Clarity Icon" 
        class="logo-icon">
-  <span>  Cardstock Clarity</span>
+
+  <div class="logo-text-block">
+    <span>Cardstock Clarity</span>
+    <p class="kicker header-tagline">
+      Art • Psychology • Spirituality — For Guided Inner Exploration
+    </p>
+  </div>
 </div>
   
   
@@ -188,7 +199,7 @@
   <main>
     <!-- HERO -->
     <section class="hero">
-      <p class="kicker">Art • Psychology • Spirituality — For Guided Inner Exploration</p>
+    
       <h1>Supporting Personal Growth & Healing</h1>
       <p class="sub"> ...through card readings.
   
